@@ -17,7 +17,7 @@
         </div>
         <div class="col-md-6">
             <label for="usuario" class="form-label">Cl_telefono</label>
-            <input type="tel" pattern="[0-9]{9}" title="el telefono solo debe contener 10 numeros del 1 al 10" class="form-control" name=" cl_telefono" id=" cl_telefono">
+            <input type="text" pattern="[0-9]{10}" title="el telefono solo debe contener 10 numeros del 1 al 10" class="form-control" name=" cl_telefono" id=" cl_telefono">
         </div>
 </div>
 </form>

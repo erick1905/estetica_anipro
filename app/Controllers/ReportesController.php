@@ -39,6 +39,10 @@ class ReportesController extends BaseController
     {
         $VentaModel = new VentaModel();
         $data['ventasdia'] = $VentaModel
+            ->select('venta.monto_total,catalogo_servicio.nombre_del_servicio')
+            //->select('sum(monto_total)')
+            ->join('det_servicio_venta', 'det_servicio_venta.id_venta=venta.id_venta')
+            ->join('catalogo_servicio', 'catalogo_servicio.id_servicio=det_servicio_venta.id_servicio')
             //->select('sum(monto_total)')
             ->where('venta.fecha>= curdate()')
             ->paginate(25);
@@ -53,7 +57,10 @@ class ReportesController extends BaseController
     {
         $VentaModel = new VentaModel();
         $data['ventasmes'] = $VentaModel
+            ->select('venta.monto_total,catalogo_servicio.nombre_del_servicio')
             //->select('sum(monto_total)')
+            ->join('det_servicio_venta', 'det_servicio_venta.id_venta=venta.id_venta')
+            ->join('catalogo_servicio', 'catalogo_servicio.id_servicio=det_servicio_venta.id_servicio')
             ->where('venta.fecha>= DATE_ADD(CURRENT_DATE(), INTERVAL -30 DAY)')
             ->paginate(25);
         $data['total'] = $VentaModel

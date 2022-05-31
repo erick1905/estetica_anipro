@@ -16,6 +16,7 @@
             <?php foreach ($ventasmes as $i => $cita) : ?>
                 <tr>
                     <td><?= $var1 = $cita->monto_total; ?></td>
+                    <td><?= $var2 = $cita->nombre_del_servicio; ?></td>
 
                 </tr>
             <?php endforeach; ?>
