@@ -31,7 +31,7 @@
     <nav class="navbar navbar-light bg-light navbar-expand-lg fixed-top" aria-label="Eighth navbar example">
         <div class="container">
             <!-- BRAND -- nombre de la app  -->
-            <a class="navbar-brand" href="<?php echo base_url('admin') ?>">principal</a>
+            <a class="navbar-brand" href="<?php echo base_url('admin') ?>">Principal</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -40,23 +40,23 @@
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
 
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="<?php echo base_url('clientes') ?>">cliente</a>
+                        <a class="nav-link " aria-current="page" href="<?php echo base_url('clientes') ?>">Cliente</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="<?php echo base_url('citas') ?>">citas</a>
+                        <a class="nav-link " aria-current="page" href="<?php echo base_url('citas') ?>">Citas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="<?php echo base_url('promocion') ?>">promocion</a>
+                        <a class="nav-link " aria-current="page" href="<?php echo base_url('promocion') ?>">Promocion</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="<?php echo base_url('servicios') ?>">servicios</a>
+                        <a class="nav-link " aria-current="page" href="<?php echo base_url('servicios') ?>">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="<?php echo base_url('ventas') ?>">ventas</a>
+                        <a class="nav-link " aria-current="page" href="<?php echo base_url('ventas') ?>">Ventas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="<?php echo base_url('empleados') ?>">empleados</a>
+                        <a class="nav-link " aria-current="page" href="<?php echo base_url('empleados') ?>">Empleados</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="<?php echo base_url('reportes') ?>">Reportes</a>
@@ -66,7 +66,7 @@
                 </ul>
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <p class="dropdown-item">USUARIO NAME</p>
+                        <p class="dropdown-item">INICIO</p>
                     </li>
                     <li class="nav-item">
                         <a href="<?php echo base_url('/auth/logout'); ?>">

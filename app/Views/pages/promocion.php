@@ -12,7 +12,7 @@
 <!-- DIV para contenido de la app [tablas, forms, etc.] -->
 <div class="twoHeader">
     <h4>Tabla Servicios</h4>
-    <a href="<?php echo base_url('crearpromocion'); ?>"><button class="btn btn-primary">Agregar promocion</button></a>
+    <a href="<?php echo base_url('crearpromocion'); ?>"><button class="btn btn-primary">Agregar</button></a>
 </div>
 <table class="table table-hover" id="tablaClientes" name="tablaClientes">
     <thead>
@@ -35,8 +35,8 @@
                 <td> <?php echo $row->fecha_fin ?></td>
                 <td> <?php echo $row->porcentaje ?>%</td>
                 <td>
-                    <a href="<?php echo base_url('borrarpromo/' . $row->id_promocion); ?>"><button class="btn btn-danger">borrar promocion</button></a>
-                    <a href="<?php echo base_url('editarpromo/' . $row->id_promocion); ?>"><button class="btn btn-warning">editar promocion</button></a>
+                    <a href="<?php echo base_url('borrarpromo/' . $row->id_promocion); ?>"><button class="btn btn-danger">Borrar</button></a>
+                    <a href="<?php echo base_url('editarpromo/' . $row->id_promocion); ?>"><button class="btn btn-warning">Editar</button></a>
                 </td>
             </tr>
         <?php

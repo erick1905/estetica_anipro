@@ -12,7 +12,7 @@
 <!-- DIV para contenido de la app [tablas, forms, etc.] -->
 <div class="twoHeader">
     <h4>Tabla citas</h4>
-    <a href="<?php echo base_url('crearcita'); ?>"><button class="btn btn-primary">Agregar Cita</button></a>
+    <a href="<?php echo base_url('crearcita'); ?>"><button class="btn btn-primary">Agregar</button></a>
 </div>
 <table class="table table-hover" id="tablaClientes" name="tablaClientes">
     <thead>
@@ -33,8 +33,8 @@
                 <td> <?php echo $row->hora ?></td>
                 <td> <?php echo $row->idcliente ?></td>
                 <td>
-                    <a href="<?php echo base_url('borrarcita/' . $row->id_cita); ?>"><button class="btn btn-danger">borrar cita</button></a>
-                    <a href="<?php echo base_url('editarcita/' . $row->id_cita); ?>"><button class="btn btn-warning">editar cita</button></a>
+                    <a href="<?php echo base_url('borrarcita/' . $row->id_cita); ?>"><button class="btn btn-danger">Borrar</button></a>
+                    <a href="<?php echo base_url('editarcita/' . $row->id_cita); ?>"><button class="btn btn-warning">Editar</button></a>
                 </td>
             </tr>
         <?php

@@ -12,7 +12,7 @@
 <!-- DIV para contenido de la app [tablas, forms, etc.] -->
 <div class="twoHeader">
     <h4>Tabla clientes</h4>
-    <a href="<?php echo base_url('crearcliente/'); ?>"><button class="btn btn-primary">Agregar Cliente</button></a>
+    <a href="<?php echo base_url('crearcliente/'); ?>"><button class="btn btn-primary">Agregar</button></a>
 </div>
 <table class="table table-hover" id="tablaClientes" name="tablaClientes">
     <thead>
@@ -31,8 +31,8 @@
                 <td> <?php echo $row->cl_nombre ?></td>
                 <td> <?php echo $row->cl_telefono ?></td>
                 <td>
-                    <a href="<?php echo base_url('borrarcliente/' . $row->idcliente); ?>"><button class="btn btn-danger">borrar cliente</button></a>
-                    <a href="<?php echo base_url('editarcliente/' . $row->idcliente); ?>"><button class="btn btn-warning">editar cliente</button></a>
+                    <a href="<?php echo base_url('borrarcliente/' . $row->idcliente); ?>"><button class="btn btn-danger">borrar</button></a>
+                    <a href="<?php echo base_url('editarcliente/' . $row->idcliente); ?>"><button class="btn btn-warning">editar</button></a>
                 </td>
             </tr>
         <?php

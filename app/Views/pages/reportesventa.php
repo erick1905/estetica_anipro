@@ -19,15 +19,15 @@
 
         <div class="card bg-light border-0 shadow-sm col-md-3">
             <div class="card-body">
-                <h5 class="card-title">citas por dia</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Reporte de citas</h6>
+                <h5 class="card-title">CITAS POR DIA </h5>
+                <h6 class="card-subtitle mb-2 text-muted">REPORTE CITAS</h6>
                 <p class="card-text">Listado de citas del dia</p>
                 <a href="<?= base_url('/citasdia'); ?>" class="btn btn-primary btn-sm">Ver Citas</a>
             </div>
         </div>
         <div class="card bg-light border-0 shadow-sm col-md-3">
             <div class="card-body">
-                <h5 class="card-title">Descuento mas usado del mes</h5>
+                <h5 class="card-title">DESCUENTO MAS UTILIZADO DEL MES</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Reporte de descuentos</h6>
                 <p class="card-text">Listado de porcentaje de descuento mas usado en el mes</p>
                 <a href="<?= base_url('/promopopular'); ?>" class="btn btn-primary btn-sm">Ver Popular</a>
@@ -36,19 +36,19 @@
         <div class="card bg-light border-0 shadow-sm col-md-3">
             <div class="card-body">
                 <h5 class="card-title"></h5>
-                <h6 class="card-subtitle mb-2 text-muted">Reporte promociones activas</h6>
+                <h6 class="card-subtitle mb-2 text-muted">REPORTE PROMOCIONES ACTIVAS</h6>
                 <p class="card-text">Listado de las promociones que se encuentran activas</p>
                 <a href="<?php echo base_url('/promosactivas'); ?>" class="btn btn-primary btn-sm">Ver promociones</a>
             </div>
             <div class="card-body">
                 <h5 class="card-title"></h5>
-                <h6 class="card-subtitle mb-2 text-muted">Reporte monto total del dia</h6>
+                <h6 class="card-subtitle mb-2 text-muted">REPORTE MONTO TOTAL DEL DIA</h6>
                 <p class="card-text">Mostrara la cantidad total de lo que se vendio en el dia</p>
                 <a href="<?php echo base_url('/totalventasdia'); ?>" class="btn btn-primary btn-sm">Ver Monto total</a>
             </div>
             <div class="card-body">
                 <h5 class="card-title"></h5>
-                <h6 class="card-subtitle mb-2 text-muted">Reporte monto total del mes</h6>
+                <h6 class="card-subtitle mb-2 text-muted">REPORTE TOTAL DEL MES</h6>
                 <p class="card-text">Mostrara la cantidad total de lo que se vendio en el mes</p>
                 <a href="<?php echo base_url('/ventasmes'); ?>" class="btn btn-primary btn-sm">Ver Monto total del mes</a>
             </div>

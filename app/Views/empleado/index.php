@@ -36,8 +36,8 @@
                     <td><?php echo $row->fecha_ingreso; ?></td>
                     <td><?php echo $row->fecha_egreso; ?></td>
                     <td>
-                        <a href="<?php echo base_url('empleados/editar/' . $row->id_empleado); ?>" class="btn btn-outline-primary btn-sm">Editar Empleado</a>
-                        <a href="<?php echo base_url('borrarempleado/' . $row->id_empleado); ?>" class="btn btn-outline-danger btn-sm">Dar de baja Empleado</a>
+                        <a href="<?php echo base_url('empleados/editar/' . $row->id_empleado); ?>" class="btn btn-outline-primary btn-sm">Editar</a>
+                        <a href="<?php echo base_url('borrarempleado/' . $row->id_empleado); ?>" class="btn btn-outline-danger btn-sm">Dar de baja</a>
                     </td>
                 </tr>
             <?php } ?>
@@ -50,7 +50,7 @@
 
 <!-- se puede agregar mas contenido para ocultar o mostrar con js -->
 <div id="result">
-    <button onclick="btnCall(10)">mandar fucion</button>
+
 
 
 </div>
