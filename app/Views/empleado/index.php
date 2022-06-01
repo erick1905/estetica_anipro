@@ -2,7 +2,14 @@
 <?php echo $this->extend('pages/plantilla'); ?>
 <?php echo $this->section('contenido'); ?>
 
-
+<style>
+    body {
+        background-image: url('img/rosa.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+</style>
 <!-- DIV para contenido de la app [tablas, forms, etc.] -->
 <div class="container  px-4  gy-5">
     <h4>EMPLEADOS</h4>

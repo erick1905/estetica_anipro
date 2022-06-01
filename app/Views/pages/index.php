@@ -2,6 +2,7 @@
 <?php echo $this->extend('pages/plantilla'); ?>
 <?php echo $this->section('contenido'); ?>
 
+
 <div class="container mt-3">
     <div class="row justify-content-between align-items-center">
         <h3 class="col-auto">Empleados</h3>

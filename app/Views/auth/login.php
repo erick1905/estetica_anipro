@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="es-MX">
+<style>
+    body {
+        background-image: url('img/rosa2.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+
+    }
+</style>
+<style>
+    body {
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <span style='font-size:100px;'>&#127800;</span>
+    <span style='font-size:100px;'>&#128133;</span>
+    <span style='font-size:100px;'>&#128135;</span>
+    <span style='font-size:100px;'>&#127800;</span>
+
+</body>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prestaexpress</title>
+    <title>ESTETICA</title>
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body class="container my-5">
-    <h4>Login | Estetica</h4>
-    <img src="<?php echo base_URL('img/OIP.jpg') ?>">
+    <h4>Inicia sesion</h4>
     <?php if (session('error')) : ?>
         <div>
             <?php echo session('error'); ?>
@@ -25,7 +46,7 @@
         <div class="form-group">
             <input type="password" class="form-control bg-light text-dark" name="contrasena" placeholder="Contraseña">
         </div>
-        <button type="submit" class="btn btn-primary">Entrar</button>
+        <button type="submit" class="btn btn-primary">Iniciar sesion</button>
     </form>
 
     <!-- bootstrap -->

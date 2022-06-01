@@ -32,7 +32,10 @@ class PromocionModel extends Model
     public function getpromos()
     {
         $db = db_connect();
-        $promo = $db->query("SELECT * FROM promocion")->getResult();
+        $promo = $db->query("SELECT * 
+                            FROM promocion p
+                            where fecha_inicio < (SELECT now()) 
+                            and fecha_fin > (SELECT now());")->getResult();
         return $promo;
     }
 }

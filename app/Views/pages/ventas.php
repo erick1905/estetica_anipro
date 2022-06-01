@@ -1,5 +1,13 @@
 <?php echo $this->extend('pages/plantilla'); ?>
 <?php echo $this->section('contenido'); ?>
+<style>
+    body {
+        background-image: url('img/rosa.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+</style>
 <!doctype html>
 <html lang="en">
 
@@ -26,6 +34,8 @@
     este parte debe estar afuera del form  -->
         <div class="container">
 
+
+
             <div class="card">
                 <div class="card-body">
 
@@ -41,7 +51,7 @@
                         <select class="form-select" id="promo" aria-label="Example select with button addon">
                             <option selected>Seleccionar descuento.</option>
                             <?php foreach ($promo as $row) { ?>
-                                <option value-IDP="<?= $row->id_promocion  ?>" value-fechai="<?= $row->fecha_inicio ?>" value-fechaf="<?= $row->fecha_fin ?>" value-porcentaje="<?= $row->porcentaje  ?>"> <?= $row->porcentaje ?></option>
+                                <option value-IDP="<?= $row->id_promocion  ?>" value-fechai="<?= $row->fecha_inicio ?>" value-fechaf="<?= $row->fecha_fin ?>" value-fechaf="<?= $row->id_servicio ?>" value-porcentaje="<?= $row->porcentaje  ?>"> <?= $row->porcentaje ?></option>
                             <?php  } ?>
 
                         </select>
