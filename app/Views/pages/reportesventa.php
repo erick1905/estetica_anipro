@@ -1,4 +1,4 @@
-<!-- Inicio Contenido -->
+<!-- Inicio Contenido pagina-->
 <?php echo $this->extend('pages/plantilla'); ?>
 <?php echo $this->section('contenido'); ?>
 <style>
