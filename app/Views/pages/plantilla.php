@@ -66,7 +66,7 @@
                 </ul>
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <p class="dropdown-item">INICIO</p>
+                        <p class="dropdown-item"></p>
                     </li>
                     <li class="nav-item">
                         <a href="<?php echo base_url('/auth/logout'); ?>">

@@ -15,7 +15,7 @@
     <h4>EMPLEADOS</h4>
     <a href="<?php echo base_url('empleados/crear'); ?>" class="btn btn-primary btn-sm" title="Nuevo empleado">
         <i class="bi bi-plus-circle"></i>
-        Nuevo
+        Agregar
     </a>
     <table class="table table-hover" id="tablacliente" name="tablacliente">
         <thead>

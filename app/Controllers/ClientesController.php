@@ -52,8 +52,6 @@ class ClientesController extends BaseController
     public function editarcliente($idcliente)
     {
         $ClienteModel = new ClienteModel(); // instancia del modelo empleado para buscar al empleado por $id_empleado que recibimos como parámetro por la url
-        //$data['empleado'] = $empleadoModel->getAllEmpleados($id_empleado)
-
 
         $data['cliente'] =  $ClienteModel->find($idcliente); // información del empleado a modificar
 

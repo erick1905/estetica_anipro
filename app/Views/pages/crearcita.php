@@ -23,14 +23,17 @@
             <label for="fecha" class="form-label">Fecha de la cita año/mes/dia</label>
             <input required type="date" class="form-control" name="fecha" id="fecha">
         </div>
+
         <div class="col-md-6">
             <label for="hora" class="form-label">Hora</label>
             <input required type="text" size="5" class="form-control" name="hora" id="hora">
         </div>
-        <div class="col-md-6">
-            <label for="idcliente" class="form-label">Id_cliente</label>
-            <input required type="text" class="form-control" name=" idcliente" id=" idcliente">
-        </div>
+        <select class="form-select" for="idcliente" id="idcliente" name="idcliente" aria-label="Example select with button addon">
+            <option selected>Seleccionar Cliente.</option>
+            <?php foreach ($clientes as $row) { ?>
+                <option value="<?= $row->idcliente ?>"> <?= $row->cl_nombre ?></option>
+            <?php  } ?>
+        </select>
 </div>
 </form>
 </div>

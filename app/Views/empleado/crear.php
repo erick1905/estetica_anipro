@@ -1,7 +1,14 @@
 <!-- Inicio Contenido -->
 <?php echo $this->extend('pages/plantilla'); ?>
 <?php echo $this->section('contenido'); ?>
-
+<style>
+    body {
+        background-image: url('img/rosa.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+</style>
 <div class="container mt-3">
     <div class="row justify-content-between align-items-center">
         <h3 class="col-auto">Nuevo Empleado</h3>

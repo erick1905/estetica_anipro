@@ -2,8 +2,9 @@
 
 namespace App\Controllers;
 
-
+use App\Models\ServiciosModel;
 use App\Models\CitasModel;
+use App\Models\ClienteModel;
 
 class CitasController extends BaseController
 {
@@ -21,10 +22,15 @@ class CitasController extends BaseController
     }
     public function crearcita()
     {
-        return view('pages/crearcita');
+        $clientes = new ClienteModel();
+        $data['clientes'] = $clientes->getcliente();
+
+        return view('pages/crearcita', $data);
     }
     public function registrarcita()
     {
+
+
         // instancia de los modelos que usaremos
         $CitasModel = new CitasModel(); // modelo empleado para registrar el nuevo empleado
 

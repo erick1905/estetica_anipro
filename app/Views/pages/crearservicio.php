@@ -1,6 +1,13 @@
 <?php echo $this->extend('pages/plantilla'); ?>
 <?php echo $this->section('contenido'); ?>
-
+<style>
+    body {
+        background-image: url('img/rosa.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+</style>
 <div class="container mt-3">
     <div class="row justify-content-between align-items-center">
         <h3 class="col-auto">Nuevo Servicio</h3>
@@ -17,7 +24,7 @@
         </div>
         <div class="col-md-6">
             <label for="costo_Venta" class="form-label">costo_Venta</label>
-            <input required type="text" pattern="[0-1000]{1000}" title="el costo solo debe contener numeros" class="form-control" name=" costo_Venta" id=" costo_Venta">
+            <input required type="text" pattern="[0-10]{}" title="el costo solo debe contener numeros" class="form-control" name=" costo_Venta" id=" costo_Venta">
         </div>
         <div class="col-md-6">
             <label for="precio_unitario" class="form-label">precio_unitario</label>

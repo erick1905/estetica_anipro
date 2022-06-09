@@ -51,7 +51,7 @@
                         <select class="form-select" id="promo" aria-label="Example select with button addon">
                             <option selected>Seleccionar descuento.</option>
                             <?php foreach ($promo as $row) { ?>
-                                <option value-IDP="<?= $row->id_promocion  ?>" value-fechai="<?= $row->fecha_inicio ?>" value-fechaf="<?= $row->fecha_fin ?>" value-fechaf="<?= $row->id_servicio ?>" value-porcentaje="<?= $row->porcentaje  ?>"> <?= $row->porcentaje ?></option>
+                                <option value-IDP="<?= $row->id_promocion  ?>" value-fechai="<?= $row->fecha_inicio ?>" value-fechaf="<?= $row->fecha_fin ?>" value-fechaf="<?= $row->id_servicio ?>" value-porcentaje="<?= $row->porcentaje  ?>"> <?= $row->porcentaje  ?> <?= $row->nombre_del_servicio ?></option>
                             <?php  } ?>
 
                         </select>

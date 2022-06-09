@@ -32,8 +32,9 @@ class PromocionModel extends Model
     public function getpromos()
     {
         $db = db_connect();
-        $promo = $db->query("SELECT * 
+        $promo = $db->query("SELECT p.porcentaje, c.nombre_del_servicio,p.id_promocion,p.id_servicio,p.fecha_inicio,p.fecha_fin
                             FROM promocion p
+                            inner join catalogo_servicio c on c.id_servicio=p.id_servicio
                             where fecha_inicio < (SELECT now()) 
                             and fecha_fin > (SELECT now());")->getResult();
         return $promo;

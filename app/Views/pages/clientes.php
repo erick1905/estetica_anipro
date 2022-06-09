@@ -11,15 +11,15 @@
 
 <!-- DIV para contenido de la app [tablas, forms, etc.] -->
 <div class="twoHeader">
-    <h4>Tabla clientes</h4>
+    <h4>Clientes</h4>
     <a href="<?php echo base_url('crearcliente/'); ?>"><button class="btn btn-primary">Agregar</button></a>
 </div>
 <table class="table table-hover" id="tablaClientes" name="tablaClientes">
     <thead>
         <tr>
-            <th scope="col">ID CLIENTE</th>
-            <th scope="col">cl_nombre</th>
-            <th scope="col">cl_telefono</th>
+            <th scope="col">ID del cliente</th>
+            <th scope="col">Nombre del cliente</th>
+            <th scope="col">Telefono</th>
         </tr>
     </thead>
     <tbody id="resultClientes" name="resultClientes">

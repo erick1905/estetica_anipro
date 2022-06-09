@@ -70,7 +70,7 @@ class EmpleadoController extends BaseController
         $data = [
             'emp_nombre' => $this->request->getPost('emp_nombre'),
             'fecha_ingreso' => $this->request->getPost('fecha_ingreso'),
-            'fecha_egreso' => 'null',
+            'fecha_egreso' => 'Null',
             'estado'  => 1,
             'usuario' => $this->request->getPost('usuario'),
             'contrasena' => $this->request->getPost('contracena')
@@ -101,7 +101,7 @@ class EmpleadoController extends BaseController
             'fecha_ingreso' => $this->request->getPost('fecha_ingreso'),
             'estado'  => 1,
             'usuario' => $this->request->getPost('usuario'),
-            'contrasena' => $this->request->getPost('contrasena')
+            'contrasena' => $this->request->getPost('contracena')
 
         ];
         $empleadoModel->set($data);

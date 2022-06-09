@@ -11,7 +11,7 @@
 </style>
 <!-- DIV para contenido de la app [tablas, forms, etc.] -->
 <div class="twoHeader">
-    <h4>Tabla citas</h4>
+    <h4>Citas</h4>
     <a href="<?php echo base_url('crearcita'); ?>"><button class="btn btn-primary">Agregar</button></a>
 </div>
 <table class="table table-hover" id="tablaClientes" name="tablaClientes">

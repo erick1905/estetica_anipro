@@ -18,7 +18,7 @@
 
         <div class="col-md-6">
             <label for="costo_Venta" class="form-label">costo_Venta</label>
-            <input required type="text" pattern="[0-1000]{1000}" title="el costo solo debe contener numeros" class="form-control" value="<?= $servicio->costo_Venta ?>" name=" costo_Venta" id=" costo_Venta">
+            <input required type="text" pattern="[0-1000]{}" title="el costo solo debe contener numeros" class="form-control" value="<?= $servicio->costo_Venta ?>" name=" costo_Venta" id=" costo_Venta">
         </div>
         <div class="col-md-6">
             <label for="precio_unitario" class="form-label">precio_unitario</label>

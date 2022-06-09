@@ -23,6 +23,12 @@ class ClienteModel extends Model
 
         return $query; // * Regresa al modelo el objeto $data[]
     }
+    public function getcliente()
+    {
+        $db = db_connect();
+        $clientes = $db->query("SELECT * FROM cliente")->getResult();
+        return $clientes;
+    }
     public function borrarcliente($idcliente)
     {
         $db = db_connect();

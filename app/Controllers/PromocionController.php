@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\ServiciosModel;
 
 use App\Models\PromocionModel;
 
@@ -21,7 +22,9 @@ class PromocionController extends BaseController
     }
     public function crearpromocion()
     {
-        return view('pages/crearpromocion');
+        $ServiciosModel = new ServiciosModel();
+        $data['articulos'] = $ServiciosModel->getServicios();
+        return view('pages/crearpromocion', $data);
     }
 
     public function registrarpromo()
@@ -34,6 +37,7 @@ class PromocionController extends BaseController
             'fecha_fin' => $this->request->getPost('fecha_fin'),
             'porcentaje' => $this->request->getPost('porcentaje')
         ];
+
         if ($PromocionModel->insert($data)) {
             session()->setFlashdata("success", 'agregado');
         } else {
